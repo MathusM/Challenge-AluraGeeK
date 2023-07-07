@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Adicionar Produtos | AluraGeek </title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/cabecalhoAdicionar.css">
+    <link rel="stylesheet" href="./css/body.css">
+    <link rel="stylesheet" href="./css/adicionar.css">
+    <link rel="stylesheet" href="./css/barraPesquisa.css">
+    <link rel="stylesheet" href="./css/contato.css">
+    <link rel="stylesheet" href="./css/rodape.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+
+
+</head>
+    <body>
+        <header class="cabecalho">
+            <div class="cabecalhoLogo">
+                <a href="./index.html"><img src="./img/Logo.svg" class="cabecalhoLogo__imagem"></a>
+            </div>
+            <div class="cabecalhoPesquisa" id="barraDePesquisa">
+                <input type="text" class="cabecalhoPesquisa__input" id="BarraPesquisa" placeholder="Busce por um produto">
+                <button type="submit" class="cabecalhoPesquisa__submit" id="SubmitPesquisa"><img src="./img/Vector.svg"></button>
+            </div>
+
+            <div class="cabecalhoPesquisaIconMobile" id="MobilePesquisa">
+                <i class="cabecalhoPesquisaIconMobile__icon" id="MobilePesquisaIcon"><img src="./img/Vector.svg"></i>
+            </div>
+
+            <div class="cabecalhoADM" id="ButtonLogin">
+                <a href="#" class="cabecalhoADM__button">Menu Administrador</a>
+            </div>
+        </header>
+
+        <main>
+            <div class="adicionar">
+                <div class="adicionarTitulo">
+                    <h1>Adicionar novo produto</h1>
+                </div>
+
+                <div class="adicionarProduto">
+                    <form class="adicionarProduto__Form">
+                        <input class="adicionarProduto__Form-input" type="text" placeholder="URL da imagem">
+                        <input class="adicionarProduto__Form-input" type="text" placeholder="Categoria">
+                        <input class="adicionarProduto__Form-input" type="text" placeholder="Nome do produto">
+                        <input class="adicionarProduto__Form-input" type="text" placeholder="Preço do produto">
+                        <textarea class="adicionarProduto__Form-input" placeholder="Descrição do Produto" rows="3"></textarea>
+                        <button class="adicionarProduto__Form-submit" type="submit">Adicionar produto</button>
+                    </form>
+                </div>
+            </div>
+
+            
+            <div class="contato">
+                <div class="contatoGeral">
+                       <div class="contatoLogoELinks">
+                           <div class="contatoLogoELinks__Logo">
+                           <img src="./img/Logo.svg">
+                       </div>
+                       
+
+                           <div class="contatoLogoELinks__Links">
+                           <a href="#" class="contatoLinksELogo__element">Quem somos nós</a>
+                           <a href="#" class="contatoLinksELogo__element">Politica de Privacidade</a>
+                           <a href="#" class="contatoLinksELogo__element">Programa de Fidelidade</a>
+                           <a href="#" class="contatoLinksELogo__element">Nossas Lojas</a>
+                           <a href="#" class="contatoLinksELogo__element">Quero ser franquado</a>
+                           <a href="#" class="contatoLinksELogo__element">Anuncie aqui</a>
+                       </div>
+                       </div>
+
+                       <div class="contatoCT">
+                           <form class="contatoCTForm">
+                               <h1 class="contatoCTForm__titulo">Fale Conosco</h1>
+                                   <div class="contatoCTForm__element">
+                                       <input class="contatoCTForm__elementInput" placeholder="Nome">
+                                   </div>
+
+                                   <div class="contatoCTForm__element">
+                                       <textarea class="contatoCTForm__elementTextarea" placeholder="Escreva sua mensagem" rows="4"></textarea>
+                                   </div>
+
+                                   <div class="contatoCTForm__elementSubmit">
+                                       <button type="submit">Enviar mensagem</button>
+                                   </div>
+                           </form>
+                       </div>
+                   </div>
+               </div>
+
+       </main>
+
+       <footer class="rodape">
+           <div class="rodapeTitulo">
+             <h1>Desenvolvido por Matheus Marques da Silva</h1>
+           </div>
+
+           <div class="rodapeLinks">
+               <a href="https://github.com/MathusM/" class="rodapeLinks-GitHub"></a>
+               <a href="https://www.linkedin.com/in/matheus-marques-43569824a/" class="rodapeLinks-Linkedin"></a>
+           </div>
+
+
+       </footer>
+
+    </body>
+    <script src="./js/main.js"></script>
+</html>

@@ -1,0 +1,61 @@
+.promocional {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 300px;
+
+    padding: 20px 6%;
+
+    background-image: url(../img/banner-image.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    margin-bottom: 30px;
+}
+
+.promocionalTexto {
+    color: rgb(255, 255, 255);
+}
+
+.promocionalTexto h1 {
+    font-size: 4em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+
+    margin-bottom: 15px;
+}
+
+.promocionalTexto h3 {
+    font-size: 1.5em;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+
+    margin-bottom: 12px;
+}
+
+.promocionalConsoles__button {
+    padding: 17px 23px;
+    font-size: 19px;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    cursor: pointer;
+
+    background: #2A7AE4;
+    border: none;
+}
+
+
+
+@media screen and (max-width: 699.9px) {
+    .promocional {
+        background-position: right
+    }
+    .promocionalTexto h1 {
+        font-size: 3em;
+    }
+    .promocionalTexto h3 {
+        font-size: 1.2em;
+    }
+}

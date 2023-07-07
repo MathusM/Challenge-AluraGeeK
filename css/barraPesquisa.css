@@ -1,0 +1,22 @@
+.BarraPesquisaMobileShow {
+    display: flex;
+    width: 65%;
+
+}
+.BarraPesquisaMobileInputShow {
+    font-size: 13px;
+    width: 100%;
+    letter-spacing: 1px;
+}
+.DivBarraPesquisa {
+    width: 200px;
+}
+
+.BarraPesquisaMobileHide {
+    display: none;
+}
+
+.BarraPesquisaSubmitMobileShow {
+    display: block;
+
+}

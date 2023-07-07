@@ -1,0 +1,215 @@
+.cabecalho {
+    display: flex;
+    
+
+    background: #FFFFFF;
+}
+.cabecalhoLogo {
+    display: flex;
+    justify-content: center;
+}
+
+.cabecalhoPesquisa {
+    display: flex;
+}
+
+.cabecalhoPesquisa__input {
+    background: rgb(236, 236, 236);
+
+    border: none;
+    border-radius: 22px;
+
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
+}
+
+.cabecalhoPesquisa__submit {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    
+}
+
+
+.cabecalhoLogin {
+    display: flex;
+
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+
+    letter-spacing: 2px;
+}
+
+.cabecalhoLogin__button {
+    background: transparent;
+    border: 2px solid rgb(73, 127, 255);
+    color: rgb(33, 103, 255);
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+/*MOBILE*/
+
+@media screen and (max-width: 699.9px) {
+    .cabecalho {
+        padding: 10px 10px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .cabecalhoLogo {
+        width: 30%;
+    }
+    .cabecalhoLogo__imagem {
+        width: 100%;
+    }
+    .cabecalhoPesquisa {
+        width: 68%;
+        order: 1;
+    }
+    .cabecalhoPesquisa__input {
+        width: 19rem;
+        font-size: 14px;
+        padding: 3px 10px;
+
+    }
+    .cabecalhoPesquisaIconMobile {
+        order: 1; 
+        padding: 20px;  
+    }
+    .cabecalhoPesquisa__icon {
+        width: 1.5rem;
+        padding: 10px;
+        cursor: pointer;
+    }
+    .cabecalhoLogin {
+        justify-content: center;
+        width: 50%;
+    }
+    .cabecalhoLogin__button {
+        padding: 0.4rem 1.5rem;
+    }
+}
+
+/*MOBILE*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*TABLET*/
+@media screen and (min-width: 700px){
+    .cabecalho {
+        padding: 10px 20px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .cabecalhoLogo {
+        width: 30%;
+    }
+    .cabecalhoLogo__imagem{
+        width: 10rem;
+    }
+    .cabecalhoPesquisa {
+        width: 50%;
+    }
+    .cabecalhoPesquisa__input {
+        width: 25rem;
+        padding: 3px 10px;
+    }
+    .cabecalhoPesquisa__icon {
+        display: none;
+    }
+    .cabecalhoPesquisaIconMobile {
+        display: none;
+    }
+    .cabecalhoLogin {
+        width: 10%;
+        padding: 1.5rem
+    }
+    .cabecalhoLogin__button {
+        padding: 7px 20px;
+    }
+}
+
+/*TABLET*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*DESKTOP*/
+@media screen and (min-width: 1100px) {
+   .cabecalho {
+    padding: 20px 4% 50px;
+    justify-content: space-between;
+    align-items: center;
+
+   }
+   .cabecalhoLogo {
+    width: 20%;
+   }
+   .cabecalhoLogo__imagem{
+    width: 14rem;
+   }
+   .cabecalhoPesquisa {
+    width: 40%;
+   }
+
+   .cabecalhoPesquisa__input {
+    width: 23rem;
+    padding: 5px 10px;
+   }
+
+   .cabecalhoPesquisa__submit img {
+    width: 1.2rem;
+   }
+   .cabecalhoPesquisa__icon {
+    display: none;
+   }
+   .cabecalhoPesquisaIconMobile {
+    display: none;
+   }
+   .cabecalhoLogin {
+    padding: 2rem;
+    width: 30%;
+
+    justify-content: right;
+   }
+
+   .cabecalhoLogin__button {
+    padding: 10px 20px;
+   }
+    
+}
+/*DESKTOP*/

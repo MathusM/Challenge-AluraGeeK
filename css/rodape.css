@@ -1,0 +1,85 @@
+.rodape {
+    display: flex;
+    align-items: center;
+}
+
+.rodapeTitulo {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+}
+
+.rodapeLinks-GitHub {
+    padding: 15px;
+    background-image: url(../img/github.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+.rodapeLinks {
+    display: flex;
+    align-items: center;
+}
+
+.rodapeLinks-Linkedin {
+    padding: 15px;
+    background-image: url(../img/linkedin.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+
+
+
+
+
+/*MOBILE*/
+
+@media screen and (max-width: 699.9px) {
+    .rodape {
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 40px 10px;
+        justify-content: space-around;
+    }
+
+    .rodapeTitulo {
+        font-size: 16px;
+    }
+}
+
+/*MOBILE*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*TABLET*/
+
+@media screen and (min-width: 700px) and (max-width: 999.9px) {
+    .rodape {
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 40px 10px;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .rodape {
+        justify-content: space-between;
+        padding: 20px 200px;
+        height: 100px;
+    }
+}
+
+/*TABLET*/
