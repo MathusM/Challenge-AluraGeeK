@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="./css/login.css">
     <link rel="stylesheet" href="./css/contato.css">
     <link rel="stylesheet" href="./css/rodape.css">
+    <link rel="stylesheet" href="./css/JScontatoStyles.css">
+    <link rel="stylesheet" href="./css/JSloginStyles.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +20,7 @@
 
 
 </head>
-    <body>
+    <body onload="EvitarRefesh()">
         <header class="cabecalho">
             <div class="cabecalhoLogo">
                 <a href="./index.html"><img src="./img/Logo.svg" class="cabecalhoLogo__imagem"></a>
@@ -37,9 +39,13 @@
                     </div>
 
                     <div class="LoginInput">
-                        <input type="text" class="LoginInput_element" placeholder="Escreva seu email" required>
-                        <input type="password" class="LoginInput_element" placeholder="Escreva sua senha" required>
-                        <button type="submit" class="LoginInput_submit">Entrar</button>
+                        <form class="LoginInputForm" id="FormLogin">
+                            <input type="text" id="input-email" class="LoginInput_element" placeholder="Escreva seu email" data-email>
+                                <h2 id="email-error" class="StyleErrorLogin"></h2>
+                            <input type="password" class="LoginInput_element" placeholder="Escreva sua senha" id="input-senha" data-senha>
+                                <h2 id="senha-error" class="StyleErrorLogin"></h2>
+                            <button type="submit" class="LoginInput_submit" id="Submit">Entrar</button>
+                        </form>
                     </div>
                 </form>
             </div>
@@ -65,16 +71,18 @@
                        <div class="contatoCT">
                            <form class="contatoCTForm">
                                <h1 class="contatoCTForm__titulo">Fale Conosco</h1>
-                                   <div class="contatoCTForm__element">
-                                       <input class="contatoCTForm__elementInput" placeholder="Nome">
-                                   </div>
+                               <div class="contatoCTForm__element">
+                                <input class="contatoCTForm__elementInput" placeholder="Nome" id="input-nome" maxlength="40">
+                                <h2 class="contatoCTForm__elementInput-ERROR" id="error-contatoInput"></h2>
+                            </div>
 
-                                   <div class="contatoCTForm__element">
-                                       <textarea class="contatoCTForm__elementTextarea" placeholder="Escreva sua mensagem" rows="4"></textarea>
-                                   </div>
+                            <div class="contatoCTForm__element">
+                                <textarea class="contatoCTForm__elementTextarea" placeholder="Escreva sua mensagem" id="input-mensagem" rows="4" maxlength="120"></textarea>
+                                <h2 class="contatoCTForm__elementInput-ERROR" id="error-contatoTextarea"></h2>
+                            </div>
 
                                    <div class="contatoCTForm__elementSubmit">
-                                       <button type="submit">Enviar mensagem</button>
+                                       <button type="submit" id="SubmitContato">Enviar mensagem</button>
                                    </div>
                            </form>
                        </div>
@@ -95,5 +103,7 @@
 
         </footer>
 
+        <script src="./js/contato.js"></script>
+        <script src="./js/loginValidacao.js"></script>
     </body>
 </html>

@@ -1,0 +1,157 @@
+.produtosHome {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 6%;
+    margin-bottom: 40px;
+}
+
+.produtosHomeTopo {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+.produtosHomeTopo h1 {
+    font-size: 26px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(42, 42, 42);
+}
+
+.produtosHomeTopo a {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    color: #1863c5;
+    text-decoration: none;
+    
+
+}
+
+
+.produtosHomeProdutos__Lista {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: w;
+}
+
+.produtosHomeProdutos__Lista-elemento {
+    width: 20%;
+}
+
+.produtosHomeProdutos__Lista-elemento img {
+    width: 80%;
+    box-shadow: 2px 5px 5px;
+}
+
+.produtosHomeProdutos__Lista-elemento h1 {
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+
+    margin: 8px 0 ;
+
+}
+
+.produtosHomeProdutos__Lista-elemento p {
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+
+    margin-bottom: 8px;
+}
+
+.produtosHomeProdutos__Lista-elemento a {
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    color: #2A7AE4;
+
+    text-decoration: none;
+}
+
+
+
+.imagemBuscada {
+    width: 65%;
+}
+
+
+
+
+
+
+/*MOBILE*/
+
+@media screen and (max-width:699.9px) {
+    .produtosHomeProdutos__Lista-elemento:nth-child(5), .produtosHomeProdutos__Lista-elemento:nth-child(6) {
+        display: none;
+    }
+    
+
+    .produtosHomeProdutos__Lista {
+        flex-wrap: wrap;
+    }
+
+    .produtosHomeProdutos__Lista-elemento {
+        width: 44%;
+    }
+
+    .produtosHomeProdutos__Lista-elemento img {
+        width: 100%;
+    }
+}
+
+
+/*MOBILE*/
+
+
+
+
+
+
+
+/*TABLET*/
+
+
+
+@media (min-width: 700px) and (max-width: 999.9px) {
+
+    .produtosHomeProdutos {
+        padding: 10px 2%;
+    }
+
+    .produtosHomeProdutos__Lista-elemento:nth-child(5), .produtosHomeProdutos__Lista-elemento:nth-child(6) {
+        display: none;
+    }
+}
+
+/*TABLET*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*DESKTOP*/
+
+@media  (max-width: 1200px) and (min-width: 1000px) {
+    .produtosHomeProdutos__Lista-elemento img {
+        width: 80%;
+    }
+    .produtosHomeProdutos__Lista {
+        align-items: baseline;
+    }
+}
+
+/*DESKTOP*/

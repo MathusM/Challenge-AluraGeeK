@@ -5,9 +5,9 @@
 }
 
 .produtoSecao__imagem {
-    width: 80%;
+    width: 20%;
 
-    margin-right: 20px;
+    margin-right: 3%;
 }
 
 
@@ -25,7 +25,7 @@
     margin-bottom: 10px;
 }
 .produtoSecao__textPreco {
-    font-size: 16px;
+    font-size: 18px;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
 
@@ -33,7 +33,7 @@
 }
 
 .produtoSecao__textDescricao {
-    font-size: 18px;
+    font-size: 20px;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
 

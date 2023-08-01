@@ -1,0 +1,14 @@
+
+
+.errorStyle-FormInput {
+    border: 2px solid red
+}
+
+.errorStyle-text {
+    color: red;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+
+    text-align: center;
+}

@@ -1,0 +1,32 @@
+.contatoError {
+    border: 2px solid red;
+    
+
+}
+
+.contatoCTForm__elementInput-ERROR {
+    margin-top: 3px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    color: red;
+}
+
+
+@keyframes error-Tremor {
+    0% { transform: translateX(-2px); }
+    25% { transform: translateX(2px); }
+    50% { transform: translateX(-2px); }
+    75% { transform: translateX(2px); }
+    100% { transform: translateX(0); }
+}
+
+.contatoError-Tremor {
+    animation: error-Tremor 0.8s linear;
+  }
+
+.contatoError::placeholder {
+    color: red;
+    
+
+}

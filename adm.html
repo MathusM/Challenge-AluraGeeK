@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Produtos | AluraGeek </title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/cabecalhoProdutos.css">
+    <link rel="stylesheet" href="./css/body.css">
+    <link rel="stylesheet" href="./css/produtos.css">
+    <link rel="stylesheet" href="./css/barraPesquisa.css">
+    <link rel="stylesheet" href="./css/contato.css">
+    <link rel="stylesheet" href="./css/rodape.css">
+    <link rel="stylesheet" href="./css/JScontatoStyles.css">
+    <link rel="stylesheet" href="./css/ErrorBusca.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+
+
+</head>
+    <body>
+        <header class="cabecalho">
+            <div class="cabecalhoLogo">
+                <a href="./index.html"><img src="./img/Logo.svg" class="cabecalhoLogo__imagem"></a>
+            </div>
+            <div class="cabecalhoPesquisa" id="barraDePesquisa">
+                <input type="text" class="cabecalhoPesquisa__input" id="BarraPesquisa" placeholder="Busce por um produto" data-pesquisa>
+                <button type="submit" class="cabecalhoPesquisa__submit"><img src="./img/Vector.svg" data-pesquisa-submit></button>
+            </div>
+
+            <div class="cabecalhoPesquisaIconMobile" id="MobilePesquisa">
+                <i class="cabecalhoPesquisaIconMobile__icon" id="MobilePesquisaIcon"><img src="./img/Vector.svg"></i>
+            </div>
+        </header>
+
+        <main>
+            <div class="produtos">
+                <div class="produtosTituloButton">
+                    <div class="produtosTituloButton__Titulo">
+                        <h1 class="produtosTituloButton__Titulo-title">
+                            Todos os Produtos
+                        </h1>
+                    </div>
+
+                    <div class="produtosTituloButton__Button">
+                        <a href="./adicionarProdutos.html">Adicionar Produtos</a>
+                    </div>
+                </div>
+                <div class="produtosLista" data-lista-div>
+                    <ul class="produtosLista" data-lista-geral>
+                        <h2 id="error-busca"></h2>
+                        
+  
+                    </ul>
+                </div>
+            </div>
+            <div class="contato">
+                <div class="contatoGeral">
+                       <div class="contatoLogoELinks">
+                           <div class="contatoLogoELinks__Logo">
+                           <img src="./img/Logo.svg">
+                       </div>
+                       
+
+                           <div class="contatoLogoELinks__Links">
+                           <a href="#" class="contatoLinksELogo__element">Quem somos nós</a>
+                           <a href="#" class="contatoLinksELogo__element">Politica de Privacidade</a>
+                           <a href="#" class="contatoLinksELogo__element">Programa de Fidelidade</a>
+                           <a href="#" class="contatoLinksELogo__element">Nossas Lojas</a>
+                           <a href="#" class="contatoLinksELogo__element">Quero ser franquado</a>
+                           <a href="#" class="contatoLinksELogo__element">Anuncie aqui</a>
+                       </div>
+                       </div>
+
+                       <div class="contatoCT">
+                           <form class="contatoCTForm">
+                               <h1 class="contatoCTForm__titulo">Fale Conosco</h1>
+                               <div class="contatoCTForm__element">
+                                <input class="contatoCTForm__elementInput" placeholder="Nome" id="input-nome" maxlength="40" required>
+                                <h2 class="contatoCTForm__elementInput-ERROR" id="error-contatoInput"></h2>
+                            </div>
+
+                            <div class="contatoCTForm__element">
+                                <textarea class="contatoCTForm__elementTextarea" placeholder="Escreva sua mensagem" id="input-mensagem" rows="4" maxlength="120" required></textarea>
+                                <h2 class="contatoCTForm__elementInput-ERROR" id="error-contatoTextarea"></h2>
+                            </div>
+
+                                   <div class="contatoCTForm__elementSubmit">
+                                       <button type="submit">Enviar mensagem</button>
+                                   </div>
+                           </form>
+                       </div>
+                   </div>
+               </div>
+        </main>
+
+        <footer class="rodape">
+            <div class="rodapeTitulo">
+              <h1>Desenvolvido por Matheus Marques da Silva</h1>
+            </div>
+
+            <div class="rodapeLinks">
+                <a href="https://github.com/MathusM/" class="rodapeLinks-GitHub"></a>
+                <a href="https://www.linkedin.com/in/matheus-marques-43569824a/" class="rodapeLinks-Linkedin"></a>
+            </div>
+
+
+        </footer>
+
+    </body>
+    <script src="./js/main.js"></script>
+    <script src="./js/contato.js"></script>
+    <script src="./js/mostrarProdutos.js" type="module"></script>
+    <script src="./js/buscarProduto.js" type="module"></script>
+
+</html>

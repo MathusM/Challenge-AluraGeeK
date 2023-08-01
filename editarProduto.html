@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Editar Produto | AluraGeek </title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/cabecalhoAdicionar.css">
+    <link rel="stylesheet" href="./css/body.css">
+    <link rel="stylesheet" href="./css/adicionar.css">
+    <link rel="stylesheet" href="./css/barraPesquisa.css">
+    <link rel="stylesheet" href="./css/contato.css">
+    <link rel="stylesheet" href="./css/rodape.css">
+    <link rel="stylesheet" href="./css/JScontatoStyles.css">
+    <link rel="stylesheet" href="./css/adicionarErrorStyle.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+
+
+</head>
+    <body>
+        <header class="cabecalho">
+            <div class="cabecalhoLogo">
+                <a href="./index.html"><img src="./img/Logo.svg" class="cabecalhoLogo__imagem"></a>
+            </div>
+         
+
+            
+
+            <div class="cabecalhoADM" id="ButtonLogin">
+                <a href="./adm.html" class="cabecalhoADM__button">Menu Administrador</a>
+            </div>
+        </header>
+
+        <main>
+            <div class="adicionar">
+                <div class="adicionarTitulo">
+                    <h1>Editar Produto</h1>
+                </div>
+
+                <div class="adicionarProduto">
+                    <form class="adicionarProduto__Form" data-formulario id="form-editar">
+
+                        <label class="adicionarProduto__Form-imagem" for="arquivo">Escolher Imagem</label>
+                        <input type="file" accept="image/*" name="arquivo" id="arquivo" data-imagemFile style="display: none;">
+                        
+                       
+                       
+                        <h2 class="errorStyle-text" id="errorForm-imagem"></h2>
+                        <input class="adicionarProduto__Form-input" type="text" placeholder="Categoria" data-categoria  name="categoria" id="categoria">
+                        <h2 class="errorStyle-text"></h2>
+
+                        <input class="adicionarProduto__Form-input" type="text" placeholder="Nome do produto" data-nome  maxlength="20" name="nome" id="nome">
+                        <h2 class="errorStyle-text"></h2>
+
+                        <input class="adicionarProduto__Form-input" type="number" placeholder="Preço do produto" data-preco name="preco" id="preco">
+                        <h2 class="errorStyle-text"></h2>
+
+                        <textarea class="adicionarProduto__Form-input" placeholder="Descrição do Produto" rows="3" data-descricao maxlength="150" name="descricao" id="descricao"></textarea>
+                        <h2 class="errorStyle-text"></h2>
+
+                        <button class="adicionarProduto__Form-submit" type="submit" id="submitButton" data-submit>Editar Produto</button>
+                        <h2 class="errorStyle-textSubmit" id="error-FormSubmit"></h2>
+                    </form>
+                </div>
+            </div>
+
+            
+            <div class="contato">
+                <div class="contatoGeral">
+                       <div class="contatoLogoELinks">
+                           <div class="contatoLogoELinks__Logo">
+                           <img src="./img/Logo.svg">
+                       </div>
+                       
+
+                           <div class="contatoLogoELinks__Links">
+                           <a href="#" class="contatoLinksELogo__element">Quem somos nós</a>
+                           <a href="#" class="contatoLinksELogo__element">Politica de Privacidade</a>
+                           <a href="#" class="contatoLinksELogo__element">Programa de Fidelidade</a>
+                           <a href="#" class="contatoLinksELogo__element">Nossas Lojas</a>
+                           <a href="#" class="contatoLinksELogo__element">Quero ser franquado</a>
+                           <a href="#" class="contatoLinksELogo__element">Anuncie aqui</a>
+                       </div>
+                       </div>
+
+                       <div class="contatoCT">
+                           <form class="contatoCTForm">
+                               <h1 class="contatoCTForm__titulo">Fale Conosco</h1>
+                               <div class="contatoCTForm__element">
+                                <input class="contatoCTForm__elementInput" placeholder="Nome" id="input-nome" maxlength="40" required>
+                                <h2 class="contatoCTForm__elementInput-ERROR" id="error-contatoInput"></h2>
+                            </div>
+
+                            <div class="contatoCTForm__element">
+                                <textarea class="contatoCTForm__elementTextarea" placeholder="Escreva sua mensagem" id="input-mensagem" rows="4" maxlength="120" required></textarea>
+                                <h2 class="contatoCTForm__elementInput-ERROR" id="error-contatoTextarea"></h2>
+                            </div>
+
+                                   <div class="contatoCTForm__elementSubmit">
+                                       <button>Enviar mensagem</button>
+                                   </div>
+                           </form>
+                       </div>
+                   </div>
+               </div>
+
+       </main>
+
+       <footer class="rodape">
+           <div class="rodapeTitulo">
+             <h1>Desenvolvido por Matheus Marques da Silva</h1>
+           </div>
+
+           <div class="rodapeLinks">
+               <a href="https://github.com/MathusM/" class="rodapeLinks-GitHub"></a>
+               <a href="https://www.linkedin.com/in/matheus-marques-43569824a/" class="rodapeLinks-Linkedin"></a>
+           </div>
+
+
+       </footer>
+
+    </body>
+    <script src="./js/main.js"></script>
+    <script src="./js/contato.js"></script>
+    <!-- <script src="./js/criarProduto.js" type="module"></script> -->
+    <script src="./js/editarValidacao.js" type="module"></script>
+    <script src="./js/editarProduto.js" type="module"></script>
+</html>

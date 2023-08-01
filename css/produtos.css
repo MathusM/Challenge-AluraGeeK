@@ -44,8 +44,17 @@
     margin: 1% 3%;
 }
 
+.produtosLista__element-edit {
+    cursor: pointer;
+}
+
+.produtosLista__element-remove {
+    cursor: pointer;
+}
+
 .produtosLista__element img{
     width: 11rem;
+    box-shadow: 2px 5px 5px;
 }
 
 .produtosLista__element h1 {

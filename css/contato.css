@@ -73,7 +73,7 @@
 }
 
 .contatoCTForm__element textarea, input{
-    border: none;
+    border: 0.1px;
     padding: 17px 20px;
 
     resize: none;
